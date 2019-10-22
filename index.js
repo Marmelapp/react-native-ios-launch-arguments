@@ -1,3 +1,10 @@
 'use strict'
 var { NativeModules } = require('react-native')
-module.exports = NativeModules.RNAppLaunchArguments;
+
+const LaunchArguments = {
+    getLaunchArgs: () => {
+        return NativeModules.RNAppLaunchArguments.launchArguments.split("::");
+    }
+}
+
+module.exports = LaunchArguments;

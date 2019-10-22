@@ -1,4 +1,4 @@
-declare namespace RNAppLaunchArguments {
-    function launchArguments(): string;
+declare namespace LaunchArguments {
+    function getLaunchArgs(): string[];
 }
-export = RNAppLaunchArguments;
+export = LaunchArguments;
